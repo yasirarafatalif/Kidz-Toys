@@ -1,9 +1,10 @@
-"use client";
+"use client"
+import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react';
 
-const Navlink = ({href,children}) => {
+
+const NavLink = ({href,children}) => {
  const path = usePathname();
   return (
     <Link
@@ -15,4 +16,4 @@ const Navlink = ({href,children}) => {
   );
 };
 
-export default Navlink;
+export default NavLink;

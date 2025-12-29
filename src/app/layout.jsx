@@ -1,13 +1,18 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/layouts/Navbar";
-import Footer from "./components/layouts/Footer";
+import localFont from "next/font/local";
+import Navbar from "@/components/layouts/Navbar";
+import Footer from "@/components/layouts/Footer";
+
 
 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+export const fontBangla = localFont({
+  src: "./../fonts/mayaboti-normal.ttf",
 });
 
 const geistMono = Geist_Mono({
